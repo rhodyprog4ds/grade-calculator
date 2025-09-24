@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=42.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "grade-calculator"
+version = "0.1.0"
+authors = [
+    {name = "Sarah M Brown", email = "brownsarahm@uri.edu"},
+]
+description = "A CLI tool to calculate grades"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+        "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent",
+]
+dependencies = [
+        "click","pandas"
+]
+
+[project.scripts]
+grade-calculator = "grade_calculator.cli:rhodyds"
+
+[project.urls]
+"Homepage" = "https://github.com/yourusername/grade-calculator"
+"Bug Tracker" = "https://github.com/yourusername/grade-calculator/issues"
